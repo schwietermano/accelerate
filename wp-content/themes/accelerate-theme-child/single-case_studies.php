@@ -40,10 +40,10 @@ get_header(); ?>
 												<?php echo wp_get_attachment_image( $image_1, $size ); ?>
 										<?php } ?>
 										<?php if($image_2) { ?>
-												<img src="<?php echo wp_get_attachment_image( $image_2, $size ); ?>" /> <!--echo wp_get_attachment_image( $image_2, $size ); -->
+												<?php echo wp_get_attachment_image( $image_2, $size ); ?> <!--echo wp_get_attachment_image( $image_2, $size ); -->
 										<?php } ?>
 										<?php if($image_3) { ?>
-													<img src="<?php echo $image_3; ?>" /> <!-- echo wp_get_attachment_image( $image_3, $size ); -->
+													<?php echo wp_get_attachment_image( $image_3, $size ); ?> <!-- echo wp_get_attachment_image( $image_3, $size ); -->
 										<?php } ?>
 							<!-- or could write below for above imgs after the if statement:
 							<img src="<?php echo $image_1; ?>">

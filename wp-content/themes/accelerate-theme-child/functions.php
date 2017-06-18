@@ -41,6 +41,34 @@ function create_custom_post_types() {
             ), //case-studies name used in URLS for case study posts (look like: localhost:888/accelerate/case-studies/)
         )  //more settings can be applied but these are good for now
     );
+
+  // add services custom post type
+    register_post_type( 'services',
+        array(
+          'labels' => array(
+              'name' => __( 'Services' ),
+              'singular_name' => __( 'Service' )
+          ),
+          'public' => true,
+          'has_archive' => false,
+          'rewrite' => array( 'slug' => 'services' ),
+      )
+  );
 }
-// Hook this custom post type function into the theme
+
 add_action( 'init', 'create_custom_post_types' );
+
+/*
+// Twitter Sidebar
+function accelerate_theme_child_widget_init() {
+register_sidebar( array(
+    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+    'id' => 'sidebar-2',
+    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' ); */

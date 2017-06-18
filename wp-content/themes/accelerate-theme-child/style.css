@@ -16,13 +16,30 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+.home-page-about {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.homepage-about-tag h3 {
+  color: white;
+  font-family: "open sans";
+  font-size: 24px;
+  font-weight: normal;
+  margin: 16px 0 80px;
+  line-height: 1.0909090909;
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
 #masthead nav ul li {
     float: left;
     margin: 0 10px;
-
 }
 
 body {
@@ -36,6 +53,7 @@ body {
 /* BLOG post on homepage */
 .recent-posts {
     overflow: hidden;
+    padding-bottom: 80px;
 }
 
 .blog-post {
@@ -49,6 +67,7 @@ body {
     color: #a6a6a6;
     text-transform: uppercase;
     margin-top: 0;
+
 }
 /* Style blog post title */
 .blog-post h2 {
@@ -65,6 +84,30 @@ body {
 }
 
 
+/*** HOMEPAGE ***/
+ul.homepage-featured-work {
+    list-style-type: none;
+}
+
+div.site-content h4 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div.blog-post h4 {
+    text-align:left;
+    padding-bottom: 10px;
+}
+
+li.individual-featured-work {
+    padding-bottom: 65px;
+}
+li.individual-featured-work h3 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
 /**** CASE STUDIES ****/
 /*article.case-study {
     margin: 50px 0 0;
@@ -75,12 +118,13 @@ aside.case-study-sidebar {
     float: left;
     width: 320px;
     /*margin: 0 40px 0 0;*/
+    padding: 50px 0 10px 0;
 }
 
 div.case-study-images {
     width: 616px;
     float: left;
-    padding-left: 24px;
+    padding: 42px 0 5px 24px;
 }
 
 div.case-study-images img {
@@ -88,4 +132,67 @@ div.case-study-images img {
     margin-bottom: 50px; /* 0px 0px 20px 20px;*/
     border: 1px solid #dddddd;
 
+}
+
+
+/****** ABOUT Page*******/
+
+#content h3 {
+  font-size: 25px;
+  color: white;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  line-height: 35px;
+  padding: 200px 0;
+}
+.our-services {
+  width: 60%;
+  margin: auto;
+}
+
+.services-header{
+  text-align:center;
+  }
+  .individual-services  {
+    float: right;
+    list-style-type:none;
+  }
+  .cta {
+    text-align: center;
+  }
+
+/****** CONTACT US PAGE/FORM *******/
+#content {
+    width: 700px;
+    margin: 65px 0 100px 150px;
+}
+
+
+/* change input boxes style methods via Ninja Forms in admin */
+#nf-field-4 {
+ /* RH-side button */
+ display: block;
+ margin: auto;
+ float: right;
+ font-size: 18px;
+ font-weight: bold;
+ font-family: Arial;
+ background-color: #45ac9d;
+ padding: 12px 0 12px 0;
+ /*border-radius: 9px;*/
+ /*padding: 10px 20% 10px 20%;    /* Button size */
+ /*text-shadow: 0 0 1px #45ac9d;  /* Text effects */
+ /*box-shadow: 0px 1px 1px #444;  /* box effects */
+ width: 235px;
+ }
+
+#nf-field-4:hover{
+ background-color: gray;
+ box-shadow: 1px 1px 2px #ccc;
+ }
+
+ input.ninja-forms-field,
+textarea.ninja-forms-field {
+  color: white;
 }

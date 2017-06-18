@@ -59,3 +59,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+<!--	<footer class="navigation container">
+			<div class="left">&larr;<a href="<?php echo blog_url(); ?>/blog">back to posts</a></div>
+			</footer> ->

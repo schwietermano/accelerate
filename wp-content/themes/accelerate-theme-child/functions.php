@@ -43,17 +43,17 @@ function create_custom_post_types() {
     );
 
   // add services custom post type
-    register_post_type( 'services',
-        array(
-          'labels' => array(
-              'name' => __( 'Services' ),
-              'singular_name' => __( 'Service' )
-          ),
-          'public' => true,
-          'has_archive' => false,
-          'rewrite' => array( 'slug' => 'services' ),
-      )
-  );
+//  register_post_type( 'services',
+  //      array(
+      //    'labels' => array(
+      //        'name' => __( 'Services' ),
+      //        'singular_name' => __( 'Service' )
+      //    ),
+      //    'public' => true,
+      //    'has_archive' => false,
+      //    'rewrite' => array( 'slug' => 'services' ),
+    //  )
+//  );
 }
 
 add_action( 'init', 'create_custom_post_types' );

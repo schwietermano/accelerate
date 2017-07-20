@@ -17,7 +17,7 @@ get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
+			<div class='homepage-hero' id="banner">
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
@@ -63,6 +63,19 @@ get_header(); ?>
 								<?php wp_reset_query(); // resets altered query back to original ?>
 				</div>
 		</div>
+
+<!-- Dynamic Sidebar (after blog post) -->
+		<div class="tweet-post">
+			<h4>Recent Tweet</h4>
+
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			<a class="folow-us-link" href="<?php the_permalink(); ?>">Follow Us! <span>&rsaquo;</span></a>
+
+		</div>
+<?php endif; ?>
 </section>
 
 <?php get_footer(); ?>

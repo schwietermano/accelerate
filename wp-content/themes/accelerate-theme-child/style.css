@@ -12,76 +12,6 @@
  Text Domain:  accelerate-theme-child
 */
 
-.home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-}
-
-.home-page-about {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.homepage-about-tag h3 {
-  color: white;
-  font-family: "open sans";
-  font-size: 24px;
-  font-weight: normal;
-  margin: 16px 0 80px;
-  line-height: 1.0909090909;
-  text-align: center;
-  padding: 2px 2px 2px 2px;
-}
-
-#masthead {
-    background: none repeat scroll 0 0 #45ac9d;
-}
-#masthead nav ul li {
-    float: left;
-    margin: 0 10px;
-}
-
-body {
-    background: white;
-}
-
-.button {
-    background: none repeat scroll 0 0 #45ac9d;
-}
-
-/* BLOG post on homepage */
-.recent-posts {
-    overflow: hidden;
-    padding-bottom: 80px;
-}
-
-.blog-post {
-    width: 44.75%;
-    padding-right: 50px;
-    float: left;
-}
-/* Style for From the Blog header */
-.blog-post h4 {
-    font: 16px 'Montserrat';
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin-top: 0;
-
-}
-/* Style blog post title */
-.blog-post h2 {
-	 font: 700 24px 'Montserrat';
-   margin: 36px 0;
-	 font-weight: bold;
-}
-/* Style the Read More link */
-.blog-post .read-more-link {
-	 font: 700 15px 'Montserrat';
-	 font-weight: bold;
-	 color: #45ac9d;
-	 text-transform: uppercase;
-}
 
 
 /*** HOMEPAGE ***/
@@ -108,6 +38,208 @@ li.individual-featured-work h3 {
     text-align: center;
 }
 
+
+
+/* BLOG post on homepage */
+.recent-posts {
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.blog-post {
+    width: 44.75%;
+    padding-right: 80px;
+    float: left;
+    display: inline;
+}
+/* Style for From the Blog header */
+.blog-post h4 {
+    font: 16px 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}
+/* Style blog post title */
+.blog-post h2 {
+	 font: 700 24px 'Montserrat';
+   margin: 36px 0;
+	 font-weight: bold;
+}
+/* Style the Read More link */
+.blog-post .read-more-link {
+	 font: 700 15px 'Montserrat';
+	 font-weight: bold;
+	 color: #45ac9d;
+	 text-transform: uppercase;
+}
+
+/* NEWSLETTER - MAILCHIMP on homepage */
+.email-input {
+    padding-top: 10px;
+}
+label {
+    padding-right: 25px;
+    font: 600 18px 'Montserrat';
+    color: #45ac9d
+}
+input.email {
+    width: 375px;
+    font: 16px 'Montserrat';
+}
+input.submit {
+    width: 155px;
+    font: 16px 'Montserrat';
+    background-color: #45ac9d;
+    color: white;
+}
+.submit-email {
+    padding: 12px 0 60px 0;
+
+}
+
+/* TWITTER APP on homepage */
+.tweet-post {
+    width: 44.75%;
+    /*padding-right: 50px;*/
+    float: left;
+    display: inline;
+}
+
+
+/* Style for From the Blog header */
+.tweet-post h4 {
+    font: 16px 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.widget_mc4wp_form_widget {
+    padding-left: 0;
+}
+
+.widget-area .widget-title {
+  font: 700 24px 'Montserrat';
+  padding: 17px 0;
+  font-weight: bold;
+  color: inherit;
+}
+.widget_mc4wp_form_widget {
+    /*padding: 12px 150px 0 0;*/
+    list-style-type: none;
+    color: #3b3b3b;
+    font-size: 17px;
+    font: 17px 'Montserrat';
+    line-height: 2em;
+}
+
+.PI_SimpleTwitterTweets {
+    padding-left: 1px;
+    font: 17px 'Montserrat';
+}
+.tweets {
+    list-style-type: none;
+    width: 525px;
+
+}
+.tweet-post .folow-us-link {
+    font: 700 15px 'Montserrat';
+    font-weight: bold;
+    color: #45ac9d;
+    text-transform: uppercase;
+
+}
+
+/* Footer on Homepage */
+ul.social-media-menu {
+    list-style-type: none;
+}
+img {
+    padding-bottom: 15px;
+    display: inline-block;
+}
+.item-13, .item-14 {
+    width: 52px;
+}
+
+/*******  ABOUT PAGE ********/
+
+.about-page-hero {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 275px;
+}
+a:link {
+    color: #45ac9d;
+}
+/*
+#banner {
+  height: 200px;
+  width: 960px;
+  margin: 0 0 80px;
+  padding: 100px 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+}*/
+
+.about-page-hero h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 100px 30px 30px;
+}
+
+/*
+.home-page-about {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+#masthead nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+body {
+    background: white;
+}
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+/**** BLOG PAGE - SIDEBAR ****/
+aside.sidebar {
+  width: 250px;
+  margin-left: 20px;
+  list-style-type: none;
+  /*font: 17px 'Montserrat';*/
+}
+#searchsubmit {
+    margin-top: 7px;
+    background-color: #45ac9d;
+    color: white;
+}
+#searchform {
+    padding-bottom: 15px;
+}
+/*#recent-posts-2 {
+    width: 90px;
+}
+
+
 /**** CASE STUDIES ****/
 /*article.case-study {
     margin: 50px 0 0;
@@ -118,49 +250,118 @@ aside.case-study-sidebar {
     float: left;
     width: 320px;
     /*margin: 0 40px 0 0;*/
-    padding: 50px 0 10px 0;
+    padding-bottom: 20px;
 }
 
 div.case-study-images {
-    width: 616px;
+    width: 320px;
     float: left;
-    padding: 42px 0 5px 24px;
+    padding: 82px 0 5px 55px;
+    display: inline-block;
+    margin-bottom: 50px;
+    /*border: 1px solid #dddddd;*/
 }
 
-div.case-study-images img {
+/*div.case-study-images img {
     display: block;
-    margin-bottom: 50px; /* 0px 0px 20px 20px;*/
+    margin-bottom: 50px;  0px 0px 20px 20px;
     border: 1px solid #dddddd;
 
-}
+}*/
+
+
 
 
 /****** ABOUT Page*******/
+/*.about-header {
+color: white;
+font-family: "open sans";
+font-size: 24px;
+font-weight: normal;
+margin: 16px 0 80px;
+line-height: 1.0909090909;
+text-align: center;
+padding: 2px 2px 2px 2px;
+} */
 
-#content h3 {
-  font-size: 25px;
-  color: white;
-  width: 40%;
-  text-align: center;
-  margin: auto;
-  line-height: 35px;
-  padding: 200px 0;
-}
+color: white;
+/*  font-family: "open sans";*/
+font-size: 24px;
+font-weight: normal;
+margin: 16px 0 80px;
+font-weight: bold;
+
+
 .our-services {
-  width: 60%;
+  width: 860px;
   margin: auto;
 }
 
-.services-header{
-  text-align:center;
-  }
-  .individual-services  {
-    float: right;
-    list-style-type:none;
-  }
-  .cta {
+.about-services {
+    width: 500px; /*60%*/
+    margin: auto;
     text-align: center;
-  }
+}
+.about-services h6 {
+    margin: 10px;
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+.about-services p {
+    margin: 0 20px 50px 20px;
+}
+
+.about-services-main {
+   width: 760px;
+}
+.about-services-main p {
+    text-align: left;
+/*    float: left;*/
+    width: 575px;
+    margin-left: 0px;
+    overflow: auto;
+    display: block;
+}
+/** Listed individual services - 760px **/
+.service-1, .service-2, .service-3, .service-4 {
+    height: 270px;
+}
+.service-4 {
+    padding-bottom: 40px;
+}
+
+.content-strategy, .social-media {
+    float: right;
+    clear: right;
+/*    margin-left: 250px;*/
+    display: inline;
+    width: 715px;
+}
+
+.influencer-mapping, .design-dev {
+    float: left;
+    clear: left;
+    /*margin-right: 250px;*/
+    display: inline;
+    width: 715px;
+}
+
+.img-2, .img-4 {
+    float: right;
+}
+.img-1, .img-2, .img-3, .img-4 {
+    padding-top: 40px;
+}
+
+.cta {
+  text-align: center;
+  clear: both;
+  border-top: 1px solid #d3d3d3;
+  padding: 21px 0 10px 0;
+}
+a.button {
+    margin-left: 45px;
+}
 
 /****** CONTACT US PAGE/FORM *******/
 #content {
@@ -195,4 +396,23 @@ div.case-study-images img {
  input.ninja-forms-field,
 textarea.ninja-forms-field {
   color: white;
+}
+
+/****** 404 PAGE ********/
+.error-icon {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+      text-align: center;
+}
+.error-message {
+    text-align: center;
+    padding-left: 25px;
+}
+.error-message h2 {
+    padding-bottom: 20px;
+}
+img.expand {
+    width: 20em;
 }

@@ -43,15 +43,15 @@ function create_custom_post_types() {
     );
 
   // add services custom post type
-//  register_post_type( 'services',
-  //      array(
-      //    'labels' => array(
-      //        'name' => __( 'Services' ),
+//  register_post_type( 'about_services',
+    //   array(
+    //     'labels' => array(
+    //          'name' => __( 'Services' ),
       //        'singular_name' => __( 'Service' )
-      //    ),
-      //    'public' => true,
-      //    'has_archive' => false,
-      //    'rewrite' => array( 'slug' => 'services' ),
+      //  ),
+    //      'public' => true,
+    //      'has_archive' => false,
+    //      'rewrite' => array( 'slug' => 'about-services' ),
     //  )
 //  );
 }
@@ -59,6 +59,13 @@ function create_custom_post_types() {
 add_action( 'init', 'create_custom_post_types' );
 
 /*
+//Enqueue the Dashicons script
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+wp_enqueue_style( 'dashicons' );
+}
+*/
+
 // Twitter Sidebar
 function accelerate_theme_child_widget_init() {
 register_sidebar( array(
@@ -71,4 +78,4 @@ register_sidebar( array(
     'after_title' => '</h3>',
 ) );
 }
-add_action( 'widgets_init', 'accelerate_theme_child_widget_init' ); */
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );

@@ -41,7 +41,17 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'top-nav', 'menu_class' => 'nav-menu' ) ); ?>
+					<div class="menu-top-nav-container">
+							<ul id="menu-top-nav" class="nav-menu">
+								<li class="menu-item">
+									<a href="http://localhost/accelerate/about/">About</a>
+										<a href="http://localhost/accelerate/blog/">Blog</a>
+										<a href="http://localhost/accelerate/case-studies/">Work</a>
+										<a href="http://localhost/accelerate/contact-us/">Contact</a> 
+			<!--	  <?php wp_nav_menu( array( 'theme_location' => 'top-nav', 'menu_class' => 'nav-menu' ) ); ?> -->
+						</li>
+					</ul>
+				</div>
 			</nav>
 			<div class="clearfix"></div>
 		</div>
